@@ -1,0 +1,15 @@
+<div class ="row">
+	<div class="col-md-3">
+
+		<%= form_with(model: @micropost,local: true) do |f|%>
+			<%= render 'shared/error_messages' %>
+
+			<%= f.label :content %>
+			<%= f.text_area :content %>
+
+			
+			<%=f.submit "Post ",class:"btn btn-primary"%>
+		<% end %>
+     </div>
+
+</div>

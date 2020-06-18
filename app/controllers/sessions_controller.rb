@@ -13,8 +13,7 @@ class SessionsController < ApplicationController
   		else
   		 forget(user)
   		end
-  		redirect_to user_url(user)
-
+  		redirect_back_or(user)
   	else
 
   		flash[:danger] = "Email or password is incorrect."

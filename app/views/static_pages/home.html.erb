@@ -1,3 +1,19 @@
+<% if logged_in? %>
+	<div class="row">
+		<aside class="col-md-4">
+			<section class="micropost_form">
+				<%= render 'shared/micropost_form' %>
+			</section>
+		</aside>
+	</div>
+<% end %>
+
+
+
+
+
+
+
 <div class="jumbotron">
   <h1 class="display-4">Sample App</h1>
   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
